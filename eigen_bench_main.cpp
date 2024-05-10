@@ -4,7 +4,7 @@
 #include <iostream>
 #include "helper.h"
 
-typedef Eigen::SparseMatrix<double, Eigen::ColMajor> SpMat; // declares a column-major sparse matrix type of double
+typedef Eigen::SparseMatrix<double, Eigen::RowMajor> SpMat; // declares a column-major sparse matrix type of double
 
 
 int main(int argc, char** argv)

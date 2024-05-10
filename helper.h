@@ -12,7 +12,7 @@
 
 typedef MtxReader<int, double, unsigned int> reader_t;
 typedef Eigen::Triplet<double> T;
-typedef Eigen::SparseMatrix<double, Eigen::ColMajor> SpMat; // declares a column-major sparse
+typedef Eigen::SparseMatrix<double, Eigen::RowMajor> SpMat; // declares a column-major sparse
 
 /* 
 Generate a random floating point number from -1 to 1
