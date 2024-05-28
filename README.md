@@ -33,10 +33,11 @@ g++ -I/usr/include/eigen3 -ftree-vectorize -march=native -funroll-loops -O2 -fop
 Results for matrix ``fcondp2`` from [SuiteSparse](https://sparse.tamu.edu/DNVS/fcondp2) (single thread per run).
 Optimal concurrent runs is the minimum concurrent runs whose throughput is superior to 95% of the maximum.
 
-| System       | Max. throughput (GFLOP/s) | OCR | CAD/GLOPS/s |
+| System       | Max. throughput (GFLOP/s) | OCR | CAD/GFLOP/s |
 |--------------|---------------------------|-----|-------------|
 | Raspberry Pi 5 | 0.76 | 1 | 130 |
 | Laptop Ryzen 5500U - 24GB DDR4 | 2.33 | 4 | 270 | 
-| Laptop i7 12800H - 2x16GB DDR5-48000 | 4.5 | 500 |
+| Laptop i7 12800H - 2x16GB DDR5-4800 | 4.5 | 6 | 500 |
 | Workstation Threadripper 5955WX - 8x16GB DDR4-3200 | 6.9 | 6 | 400 |
-| Server E5-2650v4 - 8x16GB DDR4-2400 | 4.8 | 10 | 60 |
+| Server E5-2650v4 - 8x16GB DDR4-2400 | 4.8 | 10 | 200 |
+| Server EPYC 9274F - 16x816GB DDR5-4800 | 34 | 24 | 500 |
